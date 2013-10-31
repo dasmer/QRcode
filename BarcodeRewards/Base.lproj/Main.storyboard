@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller - Item-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="poh-0Y-xac"/>
+                        <viewControllerLayoutGuide type="bottom" id="rgb-C8-ANs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qp7-qN-mAg" userLabel="Camera">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="569"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uTC-i2-8Y3">
+                                <rect key="frame" x="20" y="145" width="280" height="280"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="dNR-xg-IQM"/>
+                                    <constraint firstAttribute="height" constant="280" id="pfO-m9-Uz0"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="uTC-i2-8Y3" secondAttribute="centerX" id="1CK-tb-aFA"/>
+                            <constraint firstItem="Qp7-qN-mAg" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="4WU-ai-ZZa"/>
+                            <constraint firstAttribute="trailing" secondItem="Qp7-qN-mAg" secondAttribute="trailing" id="BU1-g6-YBh"/>
+                            <constraint firstItem="Qp7-qN-mAg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="feJ-Ef-ymT"/>
+                            <constraint firstAttribute="centerY" secondItem="uTC-i2-8Y3" secondAttribute="centerY" constant="-0.5" id="qZV-lD-Vhg"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Lar-qH-d4S"/>
+                    <navigationItem key="navigationItem" id="o2F-kr-oHY"/>
+                    <connections>
+                        <outlet property="_previewView" destination="Qp7-qN-mAg" id="KtE-ij-uhO"/>
+                        <outlet property="_scannableRegion" destination="uTC-i2-8Y3" id="eEa-mY-1MM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="466" y="211"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
